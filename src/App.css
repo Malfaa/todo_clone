@@ -1,8 +1,29 @@
 .App {
-  text-align: center;
+  text-align: justify;
+  padding-left: 10px;
 
 }
 
 h1{
   color: blue;
+  text-align: center;
+  font-size: 60px;
+
+}
+
+ul{
+  border: 1px solid;
+  background-color: white;
+  padding: 1px;
+  justify-content: center;
+  width: 80%;
+}
+
+li{
+  list-style-type: none;
+}
+
+#botao{
+  margin: 20px;
+
 }

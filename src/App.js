@@ -30,6 +30,9 @@ function App() {
     setInput('');
   }
 
+  document.body.style = 'background : #f7f5f5';
+
+  // FIXME: arrumar aqui o max de digitos pelo tamanho do card
   return (
     <div className="App">
       <h1>TODO List</h1>
@@ -37,20 +40,25 @@ function App() {
       <form>
         <FormControl>
           <InputLabel>Escreva seu TODO</InputLabel>
-          <Input value ={input} onChange={event => setInput(event.target.value)}/>
+          <Input margin='dense' multiline='true'  value ={input}
+            onChange={event => setInput(event.target.value)}/>
         </FormControl>
 
-        <Button disabled= {!input} type= 'submit' onClick={addTodo}
+        <br/>
+
+        <Button id="botao" disabled= {!input} type= 'submit' onClick={addTodo}
         variant="contained" color="primary">
         Add Todo
         </Button>
       </form>
 
-      <ul>
+      <div>
         {todos.map(todo =>(
           <Todo todo={todo}/>
         ))}
-      </ul>
+      </div>
+
+
     </div>
   );
 }
