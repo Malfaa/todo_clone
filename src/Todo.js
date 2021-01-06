@@ -17,7 +17,6 @@ function Todo(props) {
       <Button id='botaoDel' onClick = {event=> db.collection('todos').doc(props.todo.id).delete()}>
         Delete
       </Button>
-
     </List>
   )
 }

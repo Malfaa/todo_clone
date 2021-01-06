@@ -30,12 +30,13 @@ function App() {
     setInput('');
   }
 
-  document.body.style = 'background : #f7f5f5';
+  document.body.style = 'background : white';
 
   // FIXME: arrumar aqui o max de digitos pelo tamanho do card
+  // TODO: Melhorar o design
   return (
     <div className="App">
-      <h1>TODO List</h1>
+      <h1>Todo List</h1>
 
       <form>
         <FormControl>

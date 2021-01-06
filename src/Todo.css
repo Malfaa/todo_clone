@@ -7,6 +7,10 @@
 }
 
 #botaoDel{
-  position: relative;
-  left: 42%;
+  position: static;
+  padding: 8px;
+}
+
+ListItemText{
+  width: 70%;
 }
